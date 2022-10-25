@@ -1,0 +1,12 @@
+<template>
+   <lightning-card title='Covid Info' icon-name="custom:custom20">
+        <div class="slds-m-around_medium">
+            <div if:true={isLoaded} class="slds-p-bottom_large slds-p-left_large">
+                <lightning-input name="covid_info_confirmed" type="number" label="Confirmed" value={covidInfo.Confirmed} readonly="true"></lightning-input>
+                <lightning-input name="covid_info_deaths" type="number" label="Deaths" value={covidInfo.Deaths} readonly="true"></lightning-input>
+                <lightning-input name="covid_info_incident_rate" type="float" label="Incident Rate" value={covidInfo.Incident_Rate} readonly="true"></lightning-input>
+                <lightning-input name="covid_info_mortality_rate" type="float" label="Mortality Rate" value={covidInfo.Mortality_Rate} readonly="true"></lightning-input>
+            </div>
+        </div>
+   </lightning-card>
+</template>
